@@ -1,2 +1,237 @@
+.hidden
+{
+  display: none;
+}
+
+body{
+    
+}
+
+#hide
+{
+  display: none;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container {
+    margin: 0 auto;
+    background-color: #fff;
+    /* max-width: 1500px; */
+  }
+  /*-----------------------------*/
+
+  .mainHeader
+  {
+      width: 375px;
+      height: 217px;
+      width: 100%;
+      background-color: #2C3C50;
+  }
+
+ 
+
+.logoHeader
+{
+	width: 220px;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.mainHeader
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+h3{
+    text-align: center;
+    font-size: 60px;
+
+}
+/*----------banner----------*/
+
+.banner
+{
+    width: 375px;
+    height: 413px;
+    background-color: #1ABC9C;
+    width:100%;
+}
 
 
+#text 
+{
+    text-align: center;
+    padding: 46px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+
+/*----------portfolio pieces----------*/
+.boxes
+{
+    width:100%;
+    
+}
+#box1
+{
+    
+    height: 250px;
+    background-color: grey;
+    margin-top:10px;
+    margin-bottom: 10px;
+    
+}
+#box2
+{
+    
+    height: 250px;
+    background-color: blue;
+    margin-bottom: 10px;
+   
+}
+#box3
+{
+    
+    height: 250px;
+    background-color: red;
+    margin-bottom: 10px;
+   
+}
+#box4
+{
+    
+    height: 250px;
+    background-color: orange;
+    margin-bottom: 10px;
+    
+}
+#box5
+{
+    height: 250px;
+    background-color: green;
+    margin-bottom: 10px;
+    
+}
+#box6
+{
+    
+    height: 250px;
+    background-color: yellow;
+    margin-bottom: 10px;
+    
+}
+
+/*---------ABOUT--------*/
+
+
+
+.about img{
+    width: 100%;
+}
+
+.about{
+    height: 1893px;
+    background-color: #1ABC9C;
+    padding: 86px;
+}
+
+.portfolioPieces p
+{
+    text-align: center;
+}
+/*---------Contact----------*/
+
+.contact
+{
+    height: 511px;
+    background-color: white;
+}
+
+.footer
+{
+    height: 395px;
+    background-color: #2C3C50;
+}
+
+
+
+
+
+
+.contact-form label
+{
+  font-size: 15px;
+  font-family: 'Averia Serif Libre', cursive;
+  color: #53652b;
+  float: left;
+}
+
+.contact-form input textarea
+{
+  background-color: #fff;
+  opacity: 0.9;
+}
+
+.contact-form input[type=placeholder]
+{
+  font-family: 'Averia Serif Libre', cursive;
+}
+
+.contact-form placeholder
+{
+  font-family: 'Averia Serif Libre', cursive;
+}
+
+.contact-form input
+{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 1px solid #1ABC9C;
+}
+
+
+.contact-form textarea
+{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 1px solid #1ABC9C;
+  /*box-sizing: border-box;*/
+}
+
+.text
+{
+  margin: 20px;
+}
+
+.btn
+{
+  display: inline-block;
+  background: #2C3C50;
+  padding: 14px 0;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  width: 80%;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.btn:hover, button:hover {
+  background: gray;
+}
