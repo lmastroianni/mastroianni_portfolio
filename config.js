@@ -1,9 +1,9 @@
 const config = {
     host: "localhost",
-    port: 8889, // 3306 for windows/linux or newer macs
+    port: 3306, // 3306 for windows/linux or newer macs
     uname: "root",
-    pword: "root", // blank for windows
-    dbase: "beerstats"
+    pword: "", // blank for windows
+    dbase: ""
 }
 
 module.exports = config;
