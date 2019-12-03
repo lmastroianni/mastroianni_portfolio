@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
     <!-- import waypoint and greensock -->
 
@@ -20,15 +21,22 @@
         <h1 class="hidden">Lucas Mastroianni</h1>
         <header class="mainHeader">
             <div class="logoHeader">
-                <img src="images/LM.svg" alt="Lucas Logo" height="185"id="logo">
+                <img src="images/lm_new.svg" alt="Lucas Logo" height="185"id="logo">
             </div>
-            <nav class="mainNav">
-                    <!--<h2 class="hidden">Main Navigation</h2>
-                        <ul>
-                           <li><a href="about.html">ABOUT</a></li>
-                           <li><a href="gallery.html">PORTFOLIO</a></li>
-                           <li><a href="contact.html">CONTACT</a></li>
-                        </ul>-->
+            <nav id="mainNav">
+                <h2 class="hidden">Main Navigation</h2>
+                <button id="button"></button>
+                <div id="burgerCon">
+                          <ul id="burgerMenu">
+                                <li><a href="about.html">ABOUT</a></li>
+                                <li><a href="gallery.html">PORTFOLIO</a></li>
+                                <li><a href="contact.html">CONTACT</a></li>
+                          </ul>
+
+
+                </div>
+                    
+                      
                   </nav>
         </header>
 
@@ -36,9 +44,8 @@
             <div id="text">
 <i>
             <h1>Lucas Mastroianni</h1>
-            <h2>Creating Media</h2>
-            <h2>Formulating Visions</h2>
-            <h2>Shaping Stories</h2>
+            <h2>Content Creator</h2>
+            
         </i>
         </div>
 
@@ -46,25 +53,44 @@
         </section>
 
         <section class="portfolioPieces">
-            <h3>SORT</h3>
-            <p>Sort Portfolio: ALL|Design|Video|Web</p>
-            <div class="boxes" class="responsive">
-                <div id="box1"></div>
-                <div id="box2"></div>
-                <div id="box3"></div>
-                <div id="box4"></div>
-                <div id="box5"></div>
-                <div id="box6"></div>   
-            </div>
+                <ul>
+                <li>Sort Portfolio:</li>
+         
+                
+                       <li>ALL | </li>
+                       <li>VIDEO | </li>
+                       <li>WEB</li>
+                
+
+                    
+                </ul>
+                        <section class="boxes">
+                              <div id="box1">
+                              <!-- <img src="images/piece1.jpg" width="1200" class="responsive"> -->
+                            </div>
+                            
+                            
+                            <div id="box2">
+                              <!-- <img src="images/piece2.jpg" height="250" width="1200" alt="sportsnet" class="responsive"> -->
+                            </div>
+                            <div id="box3">
+                              <!-- <img src="images/piece3.jpg" height="250" width="1200" alt="sportsnet" class="responsive">  -->
+                            </div>
+                             <div id="box4"></div>
+                            <div id="box5"></div>
+                            <div id="box6"></div> 
+            
+              
+            
+        </section>
         </section>
 
         <section class="about">
-            <h3>About</h3>
-           <img src="images/lucas.png" alt="bio image">
+            
+           <img src="images/lucas.png" height="200" width="200" alt="bio image" class="bio" class="responsive">
             <p>Hey! My name is Lucas Mastroianni. I shoot/edit video and
                     do front-end web design and animation. I am from a small
-                    town of Dorchester, Ontario, and am a huge sports fan, my
-                    favourite is hockey, and I am a die hard Toronto Maple Leafs fan.
+                    town of Dorchester, Ontario, and am a huge sports fan.
                     
                     I love advertisement, media, and ultimately how the human
                     brain perceives these things and how I can use creativity and
@@ -78,7 +104,7 @@
         </section>
 
         <section class="contact">
-            <h3>Let's Chat</h3>
+            <h3>LET'S CHAT</h3>
             
    <section class="contact-form boxContact">
         <div class="text">
@@ -101,6 +127,27 @@
         </section>
 
         <section class="footer">
+            <section id="footerMobile">
+                    <nav id="footerNavMobile">
+                            <h1 class="hidden">Footer Navigation</h1>
+                            <h2>Social</h2>
+                              <ul>
+                                <li><a href="index.html">Github</a></li>
+                                <li><a href="about_us.html">Linkedn</a></li>
+                                <li><a href="past_events.html">Instagram</a></li>
+                               
+                            </ul>
+
+                            <h1 class="hidden">Footer Navigation</h1>
+                            <h2>Navigation</h2>
+                              <ul>
+                                <li><a href="index.html">Portfolio</a></li>
+                                <li><a href="about_us.html">About</a></li>
+                                <li><a href="past_events.html">Contact</a></li>
+                               
+                            </ul>
+                          </nav>
+            </section>
 
         </section>
 

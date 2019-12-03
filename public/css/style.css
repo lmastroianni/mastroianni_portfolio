@@ -22,8 +22,63 @@ body{
     background-color: #fff;
     /* max-width: 1500px; */
   }
-  /*-----------------------------*/
 
+  h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-style: italic;
+  }
+
+
+  /*----------HOME PAGE-------------------*/
+/* mobile nav */
+  #mainNav button
+{
+	background: url(..//images/burger.svg) center no-repeat;
+	width: 30px;
+	height: 30px;
+	border: 0px;
+	transition: all 400ms ease;
+  margin-top: 80px;
+  margin-left: 10px;
+  
+}
+
+#mainNav button.expanded
+{
+	-webkit-transfrom: rotate(90deg);
+	-ms-transfrom: rotate(90deg);
+	transform: rotate(90deg);
+  background: url(../images/burger_active.svg) center no-repeat;
+	width: 30px;
+  height: 30px;
+ 
+}
+
+#mainNav ul
+{
+  list-style-type: none;
+}
+
+#mainNav ul li a{
+  text-decoration-line: underline;
+ text-decoration-color: orange;
+  color: white;
+}
+
+
+
+#burgerCon
+{
+margin-top: 20px;
+display: none;
+}
+
+#burgerCon.slideToggle
+{
+	display: block;
+}
+/*---------------------------*/
   .mainHeader
   {
       width: 375px;
@@ -78,7 +133,7 @@ h3{
 /*----------portfolio pieces----------*/
 .boxes
 {
-    width:100%;
+   width: 100%;
     
 }
 #box1
@@ -86,9 +141,8 @@ h3{
     
     height: 250px;
     background-color: grey;
-    margin-top:10px;
-    margin-bottom: 10px;
-    
+     margin-top:10px;
+     margin-bottom: 8px; 
 }
 #box2
 {
@@ -102,19 +156,18 @@ h3{
 {
     
     height: 250px;
-    background-color: red;
     margin-bottom: 10px;
    
 }
-#box4
+ #box4
 {
     
     height: 250px;
     background-color: orange;
     margin-bottom: 10px;
     
-}
-#box5
+} 
+/* #box5
 {
     height: 250px;
     background-color: green;
@@ -128,26 +181,66 @@ h3{
     background-color: yellow;
     margin-bottom: 10px;
     
-}
+} */
 
-/*---------ABOUT--------*/
-
-
-
-.about img{
-    width: 100%;
-}
-
-.about{
-    height: 1893px;
-    background-color: #1ABC9C;
-    padding: 86px;
+.portfolioPieces h1
+{
+  text-align: center;
+  font-family: 'Roboto', sans-serif, bold;
+  font-size: 25px;
 }
 
 .portfolioPieces p
 {
     text-align: center;
 }
+
+
+
+.portfolioPieces ul 
+{
+  list-style-type: none;
+  text-align: center;
+}
+
+.portfolioPieces ul li{
+  display: inline;
+  font-family: 'Roboto', sans-serif, bold;
+  font-size: 25px;
+  color: #2C3C50;
+}
+
+
+.portfolioPieces ul li:hover
+{
+  color: orange;
+}
+
+/*---------ABOUT--------*/
+
+.about h3{
+  color: white;
+  margin-top: 150px;
+}
+
+.about p 
+{
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+
+.about{
+    height: 800px;
+    background-color: #1ABC9C;
+    padding: 16px;
+    
+}
+
+
+
 /*---------Contact----------*/
 
 .contact
@@ -156,9 +249,13 @@ h3{
     background-color: white;
 }
 
+.contact h3{
+  color: #2C3C50;
+}
+
 .footer
 {
-    height: 395px;
+    height: 345px;
     background-color: #2C3C50;
 }
 
@@ -183,12 +280,12 @@ h3{
 
 .contact-form input[type=placeholder]
 {
-  font-family: 'Averia Serif Libre', cursive;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .contact-form placeholder
 {
-  font-family: 'Averia Serif Libre', cursive;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .contact-form input
@@ -234,4 +331,38 @@ h3{
 
 .btn:hover, button:hover {
   background: gray;
+}
+
+/*------------FOOTER-------------*/
+
+#footerNavMobile ul
+{
+  list-style-type: none;
+  text-align: center;
+  
+}
+
+#footerNavMobile ul li{
+  display: inline;
+  margin: 10px;
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+#footerNavMobile ul li a
+{
+color:white;
+text-decoration: none;
+} 
+
+.footer h2
+{
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+ font-family: 'Roboto', sans-serif, bold;
+ text-decoration-line: underline;
+ text-decoration-color: orange;
 }

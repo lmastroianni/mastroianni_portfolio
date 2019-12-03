@@ -1,67 +1,40 @@
-(() => {
-    // try to get the object and do stuff with it
-    const seeMoreButtons = document.querySelectorAll('.see-more'),
-        popOver = document.querySelector('.popover');
+//create jar, name jar, place string in jar
+//var firstName = "Marco";
 
-    const waypoint = new Waypoint({
-        // what element is this waypoint looking at?
-        // the handler will fire when it scrolls into view
-        element: document.getElementById('beer2'),
-        // what should we dowhen we hit the waypoint? This is up to you.
-        // you can trigger animation, do an AJAX call.....whatever
-        handler: function(direction) {
-          console.log('Scrolled to waypoint!');
-          this.element.innerHTML += `<p>Added this with Waypoint! We are scrolling ${direction} </p>`;
-        }
-      })
+//alert is method(built in function in JS)
+//alert("Hello" + firstName);
 
-      const waypoint2 = new Waypoint({
-        // what element is this waypoint looking at?
-        // the handler will fire when it scrolls into view
-        
-        element: document.getElementById('beer3'),
-        // what should we dowhen we hit the waypoint? This is up to you.
-        // you can trigger animation, do an AJAX call.....whatever
-        handler: function(direction) {
-          console.log('Scrolled to waypoint 2!');
-        },
+//modern JS
+//alert(`Hello ${firstName}`);
 
-        offset: 200
-      })
+//console.log("Hello" + firstName);
 
-    function buildPopover(beerdata, el) {
-        popOver.querySelector(".ipa-rating").textContent = `IPA Rating: ${beerdata.IpaRating}`;
-        popOver.querySelector(".ratings").textContent = `Average Rating: ${beerdata.ratings}`;
-        popOver.querySelector(".beer-description").textContent = beerdata.description;
+console.log("Java Script Linked Up");
 
-        // show the popover
-        popOver.classList.add('show-popover');
-        el.appendChild(popOver);
+(function(){
+	"use strict";
 
-    }
+	console.log("fired");
 
-      // run the fetch API and get the DB data
-      function fetchData() {
-          let targetEl = this,
-            url = `/svgdata/${this.dataset.target}`;
-        
-            fetch(url)
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
+	var button = document.querySelector("#button");
+	var burgerCon = document.querySelector("#burgerCon");
 
-                // populate the popover
-                buildPopover(data, targetEl);
-            })
-            .catch((err) => console.log(err));
-      }
+	function hamburgerMenu() {
+		burgerCon.classList.toggle("slideToggle");
+		button.classList.toggle("expanded");
+	}
+
+	button.addEventListener("click", hamburgerMenu, false);
+
+	/*window.onload = function() {
+  var logo = document.getElementById('logo_middle')
+  logo.style.marginTop = "25px";
+	};
+
+	// Timeline Reveal
+	document.addEventListener('aos:in',  ({ detail }) => {
+  	console.log('animated in', detail);
+});*/
 
 
-    const svgGraphic = document.querySelector(".svg-wrapper");
-
-    // svgGraphic.addEventListener("click", function() {
-    //     console.log(this);
-    // })
-
-    seeMoreButtons.forEach(button => button.addEventListener("click", fetchData));
 })();
