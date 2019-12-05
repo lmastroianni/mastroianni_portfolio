@@ -4,7 +4,8 @@
 }
 
 body{
-    
+    width:100%;
+    max-width: 1268px;
 }
 
 #hide
@@ -19,8 +20,7 @@ body{
 
   .container {
     margin: 0 auto;
-    background-color: #fff;
-    /* max-width: 1500px; */
+    max-width: 100%; 
   }
 
   h3{
@@ -31,16 +31,20 @@ body{
 
 
   /*----------HOME PAGE-------------------*/
+
+
+
 /* mobile nav */
   #mainNav button
 {
 	background: url(..//images/burger.svg) center no-repeat;
-	width: 30px;
-	height: 30px;
+	width: 25px;
+	height: 25px;
 	border: 0px;
 	transition: all 400ms ease;
-  margin-top: 80px;
-  margin-left: 10px;
+  margin-top: 23px;
+  margin-left: 55px;
+  
   
 }
 
@@ -50,8 +54,8 @@ body{
 	-ms-transfrom: rotate(90deg);
 	transform: rotate(90deg);
   background: url(../images/burger_active.svg) center no-repeat;
-	width: 30px;
-  height: 30px;
+	width: 25px;
+  height: 25px;
  
 }
 
@@ -62,7 +66,7 @@ body{
 
 #mainNav ul li a{
   text-decoration-line: underline;
- text-decoration-color: orange;
+ text-decoration-color: #595654;
   color: white;
 }
 
@@ -70,7 +74,7 @@ body{
 
 #burgerCon
 {
-margin-top: 20px;
+margin-top: 5px;
 display: none;
 }
 
@@ -78,11 +82,15 @@ display: none;
 {
 	display: block;
 }
+
+/*------Tablet Nav-----*/
+
+
 /*---------------------------*/
   .mainHeader
   {
-      width: 375px;
-      height: 217px;
+     
+      height: 73px;
       width: 100%;
       background-color: #2C3C50;
   }
@@ -113,10 +121,12 @@ h3{
 
 .banner
 {
-    width: 375px;
+    /* width: 375px; */
     height: 413px;
     background-color: #1ABC9C;
-    width:100%;
+    width: 100%;
+    
+    
 }
 
 
@@ -124,90 +134,61 @@ h3{
 {
     text-align: center;
     padding: 46px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif, bolder;
     color: white;
     font-size: 20px;
 }
 
+#text h1
+{
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  
+}
+
+#text h2
+{
+  font-weight: bolder;
+}
 
 /*----------portfolio pieces----------*/
-.boxes
+.boxes img
 {
-   width: 100%;
+   width: 70%;
+   display: block;
+   margin: 0 auto;
     
 }
 #box1
 {
     
-    height: 250px;
-    background-color: grey;
-     margin-top:10px;
-     margin-bottom: 8px; 
-}
-#box2
-{
     
-    height: 250px;
-    background-color: blue;
-    margin-bottom: 10px;
-   
-}
-#box3
-{
-    
-    height: 250px;
-    margin-bottom: 10px;
-   
-}
- #box4
-{
-    
-    height: 250px;
-    background-color: orange;
-    margin-bottom: 10px;
-    
-} 
-/* #box5
-{
-    height: 250px;
-    background-color: green;
-    margin-bottom: 10px;
-    
-}
-#box6
-{
-    
-    height: 250px;
-    background-color: yellow;
-    margin-bottom: 10px;
-    
-} */
-
-.portfolioPieces h1
-{
-  text-align: center;
-  font-family: 'Roboto', sans-serif, bold;
-  font-size: 25px;
+    /*background-color: grey;*/
+     margin-top:18px;
+     margin-bottom: 18px;
+     
 }
 
-.portfolioPieces p
-{
-    text-align: center;
-}
+
+
+
 
 
 
 .portfolioPieces ul 
 {
   list-style-type: none;
-  text-align: center;
+ text-align: center; 
 }
 
 .portfolioPieces ul li{
   display: inline;
   font-family: 'Roboto', sans-serif, bold;
-  font-size: 25px;
+  font-size: 20px;
   color: #2C3C50;
+  font-weight: bolder;
+  
 }
 
 
@@ -218,25 +199,40 @@ h3{
 
 /*---------ABOUT--------*/
 
-.about h3{
-  color: white;
-  margin-top: 150px;
+.about img{
+  padding: 5px;
+  margin-left: 130px;
 }
 
 .about p 
 {
   font-family: 'Open Sans', sans-serif;
-  color: white;
+  color: #2C3C50;
   font-size: 16px;
   line-height: 25px;
+  text-align: center;
+  padding: 10px;
+  line-height: 1.5;
+  
 }
 
 
 .about{
-    height: 800px;
-    background-color: #1ABC9C;
+    height: 535px;
+    background-color: #edf6f9;
     padding: 16px;
     
+}
+
+.thin
+{
+  height: 1px;
+border: 0;
+color: #1ABC9C;
+background-color: #1ABC9C;
+width: 90%;
+margin-top: 50px;
+
 }
 
 
@@ -364,5 +360,82 @@ text-decoration: none;
   font-size: 30px;
  font-family: 'Roboto', sans-serif, bold;
  text-decoration-line: underline;
- text-decoration-color: orange;
+ text-decoration-color: #595654;
+}
+
+/*--------lightbox stuff-------*/
+
+/*---css banner hover animation ----*/
+
+
+
+
+/*@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #2C3C50, 0 0 5px #2C3C50, 0 0 5px #2C3C50, 0 0 5px #2C3C50, 0 0 20px #2C3C50;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 5px #2c3c50, 0 0 5px #2c3c50, 0 0 5px #2c3c50, 0 0 5px #2c3c50, 0 0 5px #2c3c50, 0 0 20px #2c3c50;
+  }
+}*/
+ 
+
+
+/*------sticky nav------*/
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+/*----main nav----*/
+@media screen and (min-width: 740px) {
+
+  .deskNav 
+  {
+    display: contents;
+    /* display: flex;
+  	flex-direction: row;
+    justify-content: center; */
+  }
+
+  .deskNav ul 
+  {
+display: flex;
+flex-direction: row;
+margin: 10px;
+padding: 10px;
+  }
+
+  .deskNav ul li
+  {
+    margin: 20px;
+    
+  }
+
+
+  #burgerMenu
+  {
+    display:none;
+  }
+
+  #button
+  {
+    display:none;
+  }
+}
+
+@media screen and (min-width: 940px) {
+
+  .boxes img
+
+  {
+    
+  }
+
 }

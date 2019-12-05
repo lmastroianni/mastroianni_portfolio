@@ -11,6 +11,9 @@
 
 console.log("Java Script Linked Up");
 
+
+
+
 (function(){
 	"use strict";
 
@@ -35,6 +38,23 @@ console.log("Java Script Linked Up");
 	document.addEventListener('aos:in',  ({ detail }) => {
   	console.log('animated in', detail);
 });*/
+
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var mainHeader = document.getElementById("mainHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    mainHeader.classList.add("sticky");
+  } else {
+    mainHeader.classList.remove("sticky");
+  }
+}
 
 
 })();
